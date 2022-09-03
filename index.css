@@ -1,0 +1,140 @@
+/*Código Simples*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-size:100%;
+}
+.nav{
+    display: flex;
+}
+#a{
+    text-decoration: none;
+}
+/*Imagem de apresentação*/
+.figura{
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    max-width: 100%;
+    background-image: url('imagens/pexels-cottonbro-5483077.jpg');
+    background-repeat: no-repeat;
+}
+/*Seção apresentação*/
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro > div{
+    margin: 10px;
+}
+
+/*Seção para imagem de apresentação*/
+.apres{
+    display: flex;
+    flex-wrap: wrap;
+    /*margin: 0 auto;
+    max-width: 800px;*/
+    justify-content: center;
+}
+#img{
+    max-width: 100%;
+    display: block;
+}
+.apres > div{
+    margin: 10px;
+    flex: 1 1 200px;
+}
+/*estilização botão*/
+a.botao{
+    text-decoration: none;
+    padding: 15px;
+    background-color:#6A5ACD;
+    color: white;
+    border-radius: 25px;
+}
+/*estilização escrita intro*/
+#h1{
+    position: absolute;
+    text-shadow: 0 0 5px gray, 0 0 7px white;
+    color: white;
+    font-size:2.5rem;
+    padding-top: 20%;
+}
+
+/*separador do conteúdo*/
+#sep{
+    padding: 10px;
+    background-color:#4682B4;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px gray, 0px 0px 6px white;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+.lista > div{
+    background-color:#ADD8E6;
+    padding:10px;
+    margin: 5px;
+    border-radius: 25px;
+}
+/*Seção informação*/
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info > div{
+    padding: 20px;
+}
+
+#texto{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Seção imagem e texto*/
+.imt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background:#eee;
+    margin: 0 auto;
+}
+.imt > div{
+    margin: 30px;
+    flex:1 1 200px;
+}
+/*Rodapé*/
+.fim{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-color:#4682B4;
+}
+.fim > div{
+    display: block;
+    margin: 30px;
+    background-color:#ADD8E6;
+    border-radius: 50px;
+}
+
+@media (max-width: 600px){
+    #position{
+        order:-2;/*Mudando posição das imagens na responsividade abaixo de < 600px*/
+    }
+    #h1{
+        font-size: 1.5rem;
+    }
+}
